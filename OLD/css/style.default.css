@@ -537,7 +537,7 @@ STYLE SWITCHER FOR DEMO
 /* navbar */
 .navbar {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  min-height: 100px;
+  min-height: 50px;
   margin-bottom: 0;
   border-top: none;
   border-bottom: none;
