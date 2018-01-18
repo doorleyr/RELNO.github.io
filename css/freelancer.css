@@ -6,6 +6,9 @@
 body {
   font-family: 'Helvetica'; 
   padding-top: 200px; 
+  font-weight: 100;
+  line-height: 1.5em;
+  font-size: 15px;  
   }
 h1,
 h2,
@@ -13,12 +16,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bolder;
+  font-weight: 700;
   font-family: 'Helvetica'; }
-
-.lead{
-  font-size: 15px !important;
-}
 
 hr.star-light,
 hr.star-dark {
@@ -37,7 +36,7 @@ hr.star-dark:after {
   display: inline-block;
   padding: 0 0.25em;
   content: '\f005';
-  font-family: FontAwesome;
+  font-family: 'Helvetica';
   font-size: 2em; }
 
 hr.star-light {
@@ -61,8 +60,8 @@ section {
     line-height: 2rem; }
   @media (min-width: 992px) {
     section h2 {
-      font-size: 3rem;
-      line-height: 2.5rem; } }
+      font-size: 2.25rem;
+      line-height: 2rem; } }
 
 .btn-xl {
   padding: 1rem 1.75rem;
@@ -97,7 +96,9 @@ section {
     margin-top: 1rem;
     letter-spacing: 0.0625rem; }
     #mainNav .navbar-nav li.nav-item a.nav-link {
-      color: rgb(0, 0, 0); }
+      color: rgb(0, 0, 0);
+      padding-right: 0.5em !important;
+      padding-left: 0.5em !important; }
       #mainNav .navbar-nav li.nav-item a.nav-link:hover {
         color: rgb(0, 0, 0); }
       #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -105,9 +106,11 @@ section {
       #mainNav .navbar-nav li.nav-item a.nav-link.active {
         color: rgb(0, 0, 0); }
   #mainNav .navbar-toggler {
-    font-size: 80%;
-    padding: 0.8rem; }
+    /* font-size: 80%; */
+    padding: 0.8rem;
+  } 
 
+  
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
@@ -124,11 +127,12 @@ section {
     #mainNav .navbar-nav {
       margin-top: 0; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: #fff;
-      background: rgb(0, 0, 0); }
+      color: rgb(0, 0, 0);
+      text-decoration: underline !important;
+      background: rgba(255, 255, 255, 0); }
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-        color: #fff;
-        background: rgb(0, 0, 0); }
+        color: rgb(0, 0, 0);
+        background: rgba(255, 255, 255, 0); }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem; }
@@ -251,16 +255,19 @@ form .row:first-child .floating-label-form-group {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2C3E50;
-  color: #fff; }
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(0, 0, 0); }
 
 .copyright {
-  background-color: #1a252f; }
+  background-color: #ffffff; 
+}
 
 a {
-  color: rgb(0, 0, 0); }
+  color: rgb(0, 0, 0);
+ }
+
   a:focus, a:hover, a:active {
-    color: #444444; }
+    color: #747474 !important; }
 
 .btn {
   border-width: 2px; }
@@ -273,17 +280,17 @@ color: black !important;}
   background-color: rgb(255, 255, 255) !important; }
 
 .text-primary {
-  color: #18BC9C !important; }
+  color: rgb(0, 0, 0) !important; }
 
 .text-secondary {
-  color: #2C3E50 !important; }
+  color: rgb(0, 0, 0) !important; }
 
 .btn-primary {
-  background-color: #18BC9C;
-  border-color: #18BC9C; }
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0); }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background-color: #128f76;
-    border-color: #128f76; }
+    background-color: #000000;
+    border-color: #000000; }
 
 .btn-secondary {
   background-color: #2C3E50;
