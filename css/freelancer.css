@@ -5,7 +5,7 @@
  */
 body {
   font-family: 'Helvetica'; 
-  padding-top: 200px; 
+  /* padding-top: 200px;  */
   font-weight: 100;
   line-height: 1.5em;
   font-size: 15px;  
@@ -18,6 +18,12 @@ h5,
 h6 {
   font-weight: 700;
   font-family: 'Helvetica'; }
+
+.list-group {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 hr.star-light,
 hr.star-dark {
@@ -263,11 +269,11 @@ form .row:first-child .floating-label-form-group {
 }
 
 a {
-  color: rgb(0, 0, 0);
+  color: rgb(159, 159, 159);
  }
 
   a:focus, a:hover, a:active {
-    color: #747474 !important; }
+    color: #000000 !important; }
 
 .btn {
   border-width: 2px; }

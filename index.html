@@ -10,9 +10,12 @@
 
   <title>Ariel Noyman // Urbanism // Architecture // Computation</title>
 
+  <!-- ///////////////////////////////////////////////////////////////-->
+
+  <script src="vendor/jquery/jquery.min.js"></script>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -26,15 +29,15 @@
 </head>
 
 
-<!-- /////////////////////////////////////////////////////////////// 
-////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////-->
+<!-- ///////////////////////////////////////////////////////////////-->
+<!-- ///////////////////////////////////////////////////////////////-->
+
 
 <body id="page-top">
 
-  <!-- /////////////////////////////////////////////////////////////// 
-////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////// -->
+  <!-- ///////////////////////////////////////////////////////////////-->
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
@@ -61,6 +64,10 @@
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
           </li>
+
+          <!-- ///////////////////////////////////////////////////////////////-->
+          <!-- social links  -->
+          <!-- ///////////////////////////////////////////////////////////////-->
 
           <li class="list-inline-item">
             <a class="btn btn-outline-black btn-social text-center rounded-circle" href="https://www.facebook.com/arielnoyman">
@@ -98,17 +105,22 @@
   </nav>
 
 
-  <!-- /////////////////////////////////////////////////////////////// 
-////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////// -->
+  <!-- ///////////////////////////////////////////////////////////////-->
+
   <!-- Header -->
   <!-- About Section -->
 
   <div class="mt-5 container" id="about">
     <section class="bg-primary text-black mb-0">
-
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <div class="row">
-        <div class="col-sm-7">
+        <div class="col-sm-6">
           <h1 class="heading">Fusing cities and technology.</h1>
           <p>
             <br> Ariel Noyman is a researcher at the
@@ -135,9 +147,8 @@
   </div>
 
 
-  <!-- /////////////////////////////////////////////////////////////// 
-////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////// -->
+  <!-- ///////////////////////////////////////////////////////////////-->
+
   <!-- Portfolio Grid Section -->
   <section class="mt-5 portfolio" id="portfolio">
 
@@ -211,35 +222,29 @@
   </section>
 
 
-  <!-- /////////////////////////////////////////////////////////////// 
-////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////// -->
+  <!-- ///////////////////////////////////////////////////////////////-->
+
 
   <!-- publications Section -->
 
   <section class="mt-5 container" id="publications">
-    <h2 class="heading">Recent Publications</h2>
+    <h2 class="heading">Publications</h2>
     <br>
     <div class="row">
-      <div class="col-sm-6">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">new medowlands</a>
-          <a href="#" class="list-group-item list-group-item-action">rnc</a>
-          <a href="#" class="list-group-item list-group-item-action">AVS</a>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">powerstructures thesis</a>
-          <a href="#" class="list-group-item list-group-item-action">finding places</a>
-          <a href="#" class="list-group-item list-group-item-action">cityscope</a>
+      <div class="col-sm-12">
+        <div class="list-group" id="pubList">
         </div>
       </div>
     </div>
+    <!-- load pubs list -->
+    <script>
+      $(document).ready(function () {
+        $("#pubList").load("publications/publications.html");
+      });
+    </script>
   </section>
-  <!-- /////////////////////////////////////////////////////////////// 
-////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////// -->
+  <!-- ///////////////////////////////////////////////////////////////-->
+
 
 
   <!-- Talks Section -->
@@ -247,37 +252,71 @@
   <section class="mt-5 container" id="talks">
     <h2 class="heading">Talks</h2>
     <br>
+
+    <!-- load youtube talk -->
     <div class="row">
       <div class="col-sm-8">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bRNbap13I5w"></iframe>
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bRNbap13I5w?rel=0&amp;showinfo=0" frameborder="0"
+            allow="encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
 
-      <div class="col-sm-3">
+      <!-- load file with talks  -->
+      <div class="col-sm-4">
         <h4>Recent talks</h4>
         <br>
-        <br> Andorra
-        <br> JRC
-        <br> EU
-        <br>Ashdod
-        <br>Israel
-        </p>
-      </div>
+        <div class="list-group" id="talksList">
+        </div>
+        <!-- js for loading talks list -->
+        <script>
+          $(document).ready(function () {
+            $("#talksList").load("talks.html");
+          });
+        </script>
   </section>
 
 
 
-  <!-- /////////////////////////////////////////////////////////////// 
-////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////// -->
-  <!-- Footer -->
+  <!-- ///////////////////////////////////////////////////////////////-->
 
+
+  <!-- Footer -->
   <section class="mt-5 container" id="contact">
     <footer class="footer text-center">
       <div class="copyright py-4 text-center text-black">
         <div class="container">
-          <h4> Ariel Noyman</h4>
+          <h3> Ariel Noyman</h3>
+
+          <li class="list-inline-item">
+            <a class="btn btn-outline-black btn-social text-center rounded-circle" href="https://www.facebook.com/arielnoyman">
+              <i class="fa fa-fw fa-facebook" style="font-size:15px"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn btn-outline-black btn-social text-center rounded-circle" href="https://twitter.com/relnox">
+              <i class="fa fa-fw fa-twitter" style="font-size:15px"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn btn-outline-black btn-social text-center rounded-circle" href="https://www.linkedin.com/in/arielnoyman">
+              <i class="fa fa-fw fa-linkedin" style="font-size:15px"></i>
+            </a>
+          </li>
+
+          <li class="list-inline-item">
+            <a class="btn btn-outline-black btn-social text-center rounded-circle" href="https://github.com/RELNO">
+              <i class="fa fa-fw fa-github" style="font-size:15px"></i>
+            </a>
+          </li>
+
+
+          <li class="list-inline-item">
+            <a class="btn btn-outline-black btn-social text-center rounded-circle" href="https://www.youtube.com/user/arielnoyman">
+              <i class="fa fa-fw fa-youtube" style="font-size:15px"></i>
+            </a>
+          </li>
+
           <small>
             <br>City Science Group, MIT Media Lab
             <br> Adj.&nbsp;Professor, CMAD, Northeastern University
@@ -295,184 +334,29 @@
   </section>
 
 
+  <!-- ///////////////////////////////////////////////////////////////-->
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-to-top d-lg-none position-fixed ">
+  <div class="scroll-to-top d-lg-none position-fixed">
     <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
       <i class="fa fa-chevron-up"></i>
     </a>
   </div>
 
 
-  <!-- /////////////////////////////////////////////////////////////// 
-////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////// -->
-
-  <!-- Portfolio Modals -->
-
-  <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-2x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <br>
-            <img class="img-fluid mb-5" src="img/portfolio/an1.jpg" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam,
-              recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-              itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/an2.jpg" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam,
-              recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-              itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/an3.jpg" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam,
-              recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-              itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/an4.jpg" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam,
-              recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-              itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/an5.jpg" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam,
-              recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-              itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <img class="img-fluid mb-5" src="img/portfolio/an6.jpg" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam,
-              recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-              itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- /////////////////////////////////////////////////////////////// 
-////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////// -->
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-  <!-- Contact Form JavaScript -->
-  <!-- <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script> -->
-
-  <!-- Custom scripts for this template -->
-  <script src="js/freelancer.min.js"></script>
-
 </body>
+
+
+
+<!-- ///////////////////////////////////////////////////////////////-->
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/freelancer.js"></script>
 
 </html>
