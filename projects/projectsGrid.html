@@ -32,9 +32,10 @@
 <!-- ///////////////////////////////////////////////////////////////-->
 <!-- ///////////////////////////////////////////////////////////////-->
 <!-- ///////////////////////////////////////////////////////////////-->
-<!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+<!-- Wide Modal -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" id="PortfolioModal" role="dialog">
+    <div class="modal-dialog modal-lg">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
@@ -42,22 +43,26 @@
                     <i class="fa fa-window-close" aria-hidden="true"></i>
                 </button>
             </div>
+            <!-- here project is injected  -->
             <div class="modal-body">
             </div>
         </div>
     </div>
 </div>
 
+
 <!-- script to inject external html into modal div  -->
 <script>
     $(":button").click(function (event) {
-        var pathPrj = 'projects/' + String(event.currentTarget.name) + '/' + String(event.currentTarget.name) +
-            '.html'
-        console.log(pathPrj);
-        $('.modal-body').load(pathPrj, function () {
-            $('#myModal').modal({
-                show: true
+        if (event.currentTarget.name) {
+            var pathPrj = 'projects/' + String(event.currentTarget.name) + '/' + String(event.currentTarget.name) +
+                '.html'
+            console.log('open this project: ' + pathPrj);
+            $('.modal-body').load(pathPrj, function () {
+                $('#PortfolioModal').modal({
+                    show: true
+                });
             });
-        });
+        }
     });
 </script>

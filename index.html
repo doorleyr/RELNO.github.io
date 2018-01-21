@@ -112,34 +112,44 @@
       <br>
       <br>
       <div class="row">
-        <div class="col-sm-6">
-          <h1 class="heading">Fusing cities and technology.</h1>
-          <p>
-            <br> Ariel Noyman is a researcher at the
-            <a href="https://www.media.mit.edu/groups/city-science/overview/" target="_blank" rel="noopener">City Science Group</a> at the
-            <a href="https://www.media.mit.edu/" target="_blank" rel="noopener">MIT Media Lab</a> where he oversees the integration of the group’s diverse research topics
-            <a href="https://www.media.mit.edu/projects/cityscope/overview/" target="_blank" rel="noopener">(city simulation</a>, urban mobility, innovation districts and smart housing) to provide comprehensive solutions
-            for large scale urban challenges. He is also an adjunct professor for
-            <a href="https://camd.northeastern.edu/architecture/" target="_blank" rel="noopener">Architecture and Urbanism</a> at Northeastern University where he teaches urban development design studios.&nbsp;Noyman&nbsp;has
-            over a decade of experience in academic research and teaching,&nbsp;large-scale urban design, institutional and
-            private design projects, city-science and data visualization. Noyman has a
-            <a href="https://dspace.mit.edu/handle/1721.1/99301" target="_blank" rel="noopener">Master of Science</a> in Architecture and Urban Design program at MIT. In parallel, noyman was a research assistant
-            at the
-            <a href="http://www.rebuildbydesign.org/our-work/all-proposals/winning-projects/nj-meadowlands" target="_blank" rel="noopener">Center For Advanced Urbanism</a> at
-            <a href="https://sap.mit.edu/" target="_blank" rel="noopener">MIT SA+P</a>. Prior to MIT, Noyman graduated the School of Architecture at Bezalel Academy of Arts &amp; Design,
-            Jerusalem (Cum Laude) where he later became a Design Studio Lecturer. Since 2006, he has practiced in leading
-            architecture and design firms in the US, Europe and in Israel, while developing an independent body of work through
-            design projects, competitions, research and exhibitions.
-          </p>
-        </div>
         <div class="col-sm">
           <img class="img-fluid mb-5" src="img/an.png" alt="">
+        </div>
+        <div class="col-sm-6">
+          <h1 class="heading">Fusing cities and technology.</h1>
+          <br>
+          <p>I'm a PhD candidate at the
+            <a href="https://www.media.mit.edu/groups/city-science/overview/" target="_blank" rel="noopener">City Science Group</a> at the
+            <a href="https://www.media.mit.edu/" target="_blank" rel="noopener">MIT Media Lab</a> where I develop new tools and processes for shaping better urban environments. Previously,
+            I was a
+            <a href="https://medium.com/mit-media-lab/shifting-priorities-finding-places-9ad3bdbe38b8" target="_blank" rel="noopener">Research Scientist</a> at the Changing Places Group, where I oversaw the integration of the group&rsquo;s diverse
+            research in
+            <a href="https://www.media.mit.edu/projects/cityscope/overview/" target="_blank" rel="noopener">(city simulation</a>,
+            <a href="http://aisel.aisnet.org/amcis2017/GreenIS/Presentations/6/">urban mobility</a> and compact living spaces) to provide comprehensive solutions for MIT CityScience Network
+            collaborators. I co-teach City Science courses at MIT and design and urban-development studio at&nbsp;
+            <a href="https://camd.northeastern.edu/architecture/" target="_blank" rel="noopener">Northeastern University</a>. In 2015 I graduated MIT's&nbsp;
+            <a href="https://dspace.mit.edu/handle/1721.1/99301" target="_blank" rel="noopener">Master of Science</a> in the Architecture and Urban Design [MAUD], during which I was a research assistant at
+            the
+            <a href="http://www.rebuildbydesign.org/our-work/all-proposals/winning-projects/nj-meadowlands" target="_blank" rel="noopener">Center For Advanced Urbanism</a> at
+            <a href="https://sap.mit.edu/" target="_blank" rel="noopener">MIT SA+P</a>. Before coming to MIT, I gained over a decade of experience in large-scale urban design, institutional
+            and public projects, city-science and data visualization. In 2008 I graduated the School of Architecture at Bezalel
+            Academy of Arts &amp; Design, Jerusalem (Summa Cum Laude) where I later became a Design Lecturer. Since 2003,
+            I have practiced in leading architecture and design firms in the US, Europe and Israel while developed an independent
+            body of work through design projects, competitions, research and exhibitions.</p>
         </div>
       </div>
   </div>
 
-  <!-- ///////////////////////////////////////////////////////////////-->
-  <!-- Portfolio Grid Section -->
+  <!-- ///////////////////////////////////////////////////////////////
+  Portfolio Grid Section
+  How this portfolio works?
+  - we load list of projects from an html using js
+  - we display them in grid where images are loaded from project's folder
+  - clicking on project triggers a injection of the project html [i.e p3.html] to a bootstrap modal 
+  - images and videos or any other content for the project lives in project's folder
+  
+  This process is based on the following: https://www.codexworld.com/bootstrap-modal-dynamic-content-jquery-ajax-php-mysql/
+  /////////////////////////////////////////////////////////////// -->
 
   <section class="mt-5 portfolio" id="portfolio">
     <div class="container">
@@ -147,7 +157,7 @@
       <br>
       <div class="row" id="projectsGrid">
       </div>
-      <!-- load projects list -->
+      <!-- load projects list from html -->
       <script>
         $(document).ready(function () {
           $("#projectsGrid").load("projects/projectsGrid.html");
@@ -161,18 +171,26 @@
   <!-- publications Section -->
 
   <section class="mt-5 container" id="publications">
-    <h2 class="heading">publications</h2>
+    <h2 class="heading">media & publications</h2>
     <br>
     <div class="row">
-      <div class="col-sm-12">
+
+      <div class="col-sm-3">
+        <div class="list-group" id="newsList">
+        </div>
+      </div>
+
+      <div class="col-sm-8">
         <div class="list-group" id="pubList">
         </div>
       </div>
+
     </div>
     <!-- load pubs list -->
     <script>
       $(document).ready(function () {
         $("#pubList").load("publications/publications.html");
+        $("#newsList").load("publications/news.html");
       });
     </script>
   </section>
@@ -194,7 +212,7 @@
       <!-- load file with talks  -->
       <div class="col-sm-4">
         <h5>recent talks</h5>
-        <small>click for details</small>
+        <small>hover for details</small>
         <br>
         <br>
         <div class="list-group" id="talksList">
