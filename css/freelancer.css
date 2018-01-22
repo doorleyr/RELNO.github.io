@@ -4,6 +4,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
 
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
 body {
   font-family: 'Helvetica';
   /* padding-top: 200px;  */
@@ -20,6 +26,8 @@ h5,
 h6 {
   font-weight: 700;
   font-family: 'Helvetica';
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .box-shadow {
@@ -39,6 +47,16 @@ h6 {
   margin-bottom: 5px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.close {
+  float: right;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 1px 0 #fff;
+  opacity: 1;
 }
 
 hr.star-light,
