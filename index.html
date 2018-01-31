@@ -70,6 +70,9 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projects</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#news">News</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#publications">Publications</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
@@ -183,34 +186,41 @@
   </section>
 
 
+  <!-- ///////////////////////////////////////////////////////////////-->
+  <!-- news Section -->
+  <section class="mt-5 container" id="news">
+    <h2 class="heading">News</h2>
+    <br>
+    <div class="row" id="newsList">
+    </div>
 
+    <script>
+      $(document).ready(function () {
+        $("#newsList").load("publications/news.html");
+      });
+    </script>
+  </section>
+  <!-- ///////////////////////////////////////////////////////////////-->
   <!-- ///////////////////////////////////////////////////////////////-->
   <!-- publications Section -->
 
   <section class="mt-5 container" id="publications">
-    <h2 class="heading">media & publications</h2>
-    <br>
+
+    <h2 class="heading">Publications</h2>
     <div class="row">
-
-      <div class="col-sm-3">
-        <div class="list-group" id="newsList">
-        </div>
-      </div>
-
-      <div class="col-sm-8">
+      <div class="col-sm-12">
         <div class="list-group" id="pubList">
         </div>
       </div>
-
     </div>
     <!-- load pubs list -->
     <script>
       $(document).ready(function () {
         $("#pubList").load("publications/publications.html");
-        $("#newsList").load("publications/news.html");
       });
     </script>
   </section>
+
   <!-- ///////////////////////////////////////////////////////////////-->
   <!-- Talks Section -->
   <section class="mt-5 container" id="talks">

@@ -10,9 +10,12 @@
     box-shadow: none;
   }
 
+  .newsGrid {
+    width: 33%;
+  }
+
   body {
     font-family: 'Helvetica';
-    /* padding-top: 200px;  */
     font-weight: 100;
     line-height: 1.5em;
     font-size: 13px;
@@ -26,8 +29,8 @@
   h6 {
     font-weight: 700;
     font-family: 'Helvetica';
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .box-shadow {
@@ -216,7 +219,7 @@
     }
     #mainNav .navbar-brand {
       font-size: 4em;
-      text-transform: none!important;
+      text-transform: none !important;
       font-weight: 900;
       -webkit-transition: font-size 0.3s;
       -moz-transition: font-size 0.3s;
