@@ -85,9 +85,12 @@
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     background-size: 100% 100%;
+    -webkit-filter: drop-shadow( -5px -5px 5px #000);
+    filter: drop-shadow( 2px 2px 2px #000);
+    ;
   }
 
   hr.star-light,
@@ -154,7 +157,7 @@
   .btn-social {
     width: 2rem;
     height: 2rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 2rem;
     color: rgb(0, 0, 0);
   }
@@ -443,6 +446,26 @@
     border-width: 2px;
     padding: 0%;
     font-weight: 100;
+  }
+
+  .btn-readmore {
+    border-width: 0px;
+    padding: 5px;
+    margin: 2%;
+    font-weight: 100;
+    -moz-box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1rem .05rem rgba(0, 0, 0, 0.5);
+  }
+
+  .btn-readmore:focus {
+    outline: 0;
+  }
+
+  .btn-readmore:visited {
+    -moz-box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1rem .05rem rgba(0, 0, 0, 0.5);
   }
 
   .bg-primary {
