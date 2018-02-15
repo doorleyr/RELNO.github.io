@@ -73,7 +73,7 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#news">News</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#publications">Publications</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#publications">Publications & Awards</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#talks">Talks</a>
@@ -176,7 +176,7 @@
   <!-- ///////////////////////////////////////////////////////////////-->
   <!-- news Section -->
   <section class="mt-5 container" id="news">
-    <h2 class="heading">News</h2>
+    <h2 class="heading">news</h2>
     <br>
     <div class="row" id="newsList">
     </div>
@@ -193,17 +193,25 @@
 
   <section class="mt-5 container" id="publications">
 
-    <h2 class="heading">Publications</h2>
+    <h2 class="heading">publications & awards</h2>
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-6 scrollable">
         <div class="list-group" id="pubList">
         </div>
       </div>
+
+      <div class="col-6 scrollable">
+        <div class="list-group" id="awards">
+        </div>
+      </div>
     </div>
+
+
     <!-- load pubs list -->
     <script>
       $(document).ready(function () {
         $("#pubList").load("publications/publications.html");
+        $("#awards").load("publications/awards.html");
       });
     </script>
   </section>
@@ -212,17 +220,21 @@
   <!-- Talks Section -->
   <section class="mt-5 container" id="talks">
     <h2 class="heading">talks</h2>
-    <br>
-    <!-- load youtube talk -->
+  </section>
+
+  <!-- load youtube talk -->
+  <div class="div" id="talks">
     <div class="row">
-      <div class="col-sm-8">
-        <div class="embed-responsive embed-responsive-16by9">
+      <div class="col">
+        <div class="padding-zero embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bRNbap13I5w?rel=0&amp;showinfo=0" frameborder="0"
             allow="encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-
-      <!-- load file with talks  -->
+    </div>
+    <br>
+    <!-- load file with talks  -->
+    <div class="mt-5 container">
       <div class="col-sm-4">
         <h5>recent talks</h5>
         <small>hover for details</small>
@@ -230,13 +242,17 @@
         <br>
         <div class="list-group" id="talksList">
         </div>
-        <!-- js for loading talks list -->
-        <script>
-          $(document).ready(function () {
-            $("#talksList").load("talks.html");
-          });
-        </script>
+      </div>
+    </div>
+  </div>
   </section>
+  <!-- js for loading talks list -->
+  <script>
+    $(document).ready(function () {
+      $("#talksList").load("talks.html");
+    });
+  </script>
+
 
 
 
