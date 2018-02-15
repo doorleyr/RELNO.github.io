@@ -1,8 +1,7 @@
 .scrollable {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  position: relative;
-  overflow-y: scroll;
+  overflow: hidden;
   max-height: 40rem;
 }
 
