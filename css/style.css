@@ -12,7 +12,7 @@
 }
 
 .newsGrid {
-  width: 33%;
+  width: 25%;
 }
 
 body {
@@ -64,7 +64,7 @@ h6 {
   -moz-box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.25);
-  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
   background-color: rgb(255, 255, 255);
 }
 
@@ -297,9 +297,9 @@ header.masthead h2 {
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
   opacity: 0;
   background-color: rgb(255, 255, 255);
 }
@@ -421,22 +421,29 @@ form .row:first-child .floating-label-form-group {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgba(255, 255, 255, 0);
-  color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .copyright {
   background-color: #ffffff;
 }
+.list-group-item-action{
+  color: rgb(0, 0, 0);
+}
 
 a {
-  color: rgb(100, 100, 100);
+  color: rgb(0, 0, 0);
+}
+
+.linkfooter {
+  color: rgb(255, 255, 255);
 }
 
 a:focus,
 a:hover,
 a:active {
-  color: #000000 !important;
+  color: #808080 !important;
 }
 
 .btn {
