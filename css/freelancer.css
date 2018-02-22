@@ -69,16 +69,16 @@ h6 {
 }
 
 .close {
-  float: right;
-  font-size: 2rem;
+  float: center;
+  font-size: 1rem;
   color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
 
 .close:focus,
 .close:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(167, 167, 167);
   text-shadow: 5px 5px 8px rgba(0, 0, 0, 1);
   opacity: 1;
 }
@@ -430,7 +430,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 a {
-  color: rgb(159, 159, 159);
+  color: rgb(100, 100, 100);
 }
 
 a:focus,
@@ -446,9 +446,10 @@ a:active {
 }
 
 .btn-readmore {
-  border-width: 0px;
-  padding: 5px;
-  margin: 2%;
+  /* border-width: 0px; */
+  /* padding-top: 0.5rem; */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-weight: 100;
   -moz-box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, 0.5);

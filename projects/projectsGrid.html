@@ -142,15 +142,32 @@
 <!-- ///////////////////////////////////////////////////////////////-->
 <!-- Wide Modal -->
 
-<div class="modal fade bd-example-modal-lg" tabindex="-1" id="PortfolioModal" role="dialog">
-    <button type="button" class="close" data-dismiss="modal">
-        <i class="fa fa-times-circle-o fa-2x" aria-hidden="true"></i>
-    </button>
+
+
+<!-- The Modal -->
+<div class="modal fade" id="PortfolioModal">
     <div class="modal-dialog modal-lg">
-        <!-- Modal content-->
         <div class="modal-content">
-            <!-- here project is injected  -->
+
+            <!-- Modal Header -->
+            <div class="modal-header" data-dismiss="modal">
+                <button type="button" class="close">
+                    close
+                    <i class="fa fa-times fa-1x" aria-hidden="true"></i>
+                </button>
+            </div>
+
+
+            <!-- Modal body -->
             <div class="modal-body">
+                Modal body..
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="fa fa-times fa-1x" aria-hidden="true"></i>
+                </button>
             </div>
         </div>
     </div>
@@ -162,7 +179,7 @@
     $(":button").click(function (event) {
         if (event.currentTarget.name) {
             var pathPrj = 'projects/' + String(event.currentTarget.name) + '/' + String(event.currentTarget
-                    .name) +
+                .name) +
                 '.html'
             console.log('open this project: ' + pathPrj);
             $('.modal-body').load(pathPrj, function () {
