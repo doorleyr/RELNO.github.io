@@ -68,15 +68,16 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projects</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#talks">Talks</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#news">News</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#publications">Publications & Awards</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#talks">Talks</a>
-          </li>
         </ul>
+
 
         <!-- ///////////////////////////////////////////////////////////////-->
         <!-- social links  -->
@@ -120,6 +121,7 @@
         </div>
         <div class="col-sm-6">
           <h1 class="heading">Fusing cities and technology.</h1>
+          <br>
           <br>
           <p>I'm a PhD candidate at the
             <a href="https://www.media.mit.edu/groups/city-science/overview/" target="_blank" rel="noopener">City Science Group</a> at the
@@ -168,50 +170,6 @@
       </script>
   </section>
 
-
-  <!-- ///////////////////////////////////////////////////////////////-->
-  <!-- news Section -->
-  <section class="mt-5 container" id="news">
-    <h2 class="heading">news</h2>
-    <br>
-    <div class="row" id="newsList">
-    </div>
-
-    <script>
-      $(document).ready(function () {
-        $("#newsList").load("publications/news.html");
-      });
-    </script>
-  </section>
-
-  <!-- ///////////////////////////////////////////////////////////////-->
-  <!-- publications Section -->
-
-  <section class="mt-5 container" id="publications">
-
-    <h2 class="heading">publications & awards</h2>
-    <br>
-    <div class="row">
-      <div class="col-6">
-        <div class="list-group" id="awards"></div>
-      </div>
-
-      <div class="col-6">
-        <div class="list-group" id="pubList">
-        </div>
-      </div>
-    </div>
-
-
-    <!-- load pubs list -->
-    <script>
-      $(document).ready(function () {
-        $("#pubList").load("publications/publications.html");
-        $("#awards").load("publications/awards.html");
-      });
-    </script>
-  </section>
-
   <!-- ///////////////////////////////////////////////////////////////-->
   <!-- Talks Section -->
   <section class="mt-5 container" id="talks">
@@ -219,7 +177,7 @@
   </section>
 
   <!-- load youtube talk -->
-  <div class="div" id="talks">
+  <div class="fullWidth">
     <div class="row">
       <div class="col">
         <div class="padding-zero embed-responsive embed-responsive-16by9">
@@ -250,13 +208,56 @@
   </script>
 
   <!-- ///////////////////////////////////////////////////////////////-->
-  <!-- Footer -->
-  <section id="contact">
-    <footer class="text-center">
-      <div class="py-4 text-center footer ">
-        <div class="container">
+  <!-- news Section -->
+  <section class="mt-5 container" id="news">
+    <h2 class="heading">news</h2>
+    <br>
+    <div class="row" id="newsList">
+    </div>
 
-          <h3 style="margin-top:30%"> Ariel Noyman</h3>
+    <script>
+      $(document).ready(function () {
+        $("#newsList").load("publications/news.html");
+      });
+    </script>
+  </section>
+
+  <!-- ///////////////////////////////////////////////////////////////-->
+  <!-- publications Section -->
+
+  <section class="mt-5 container" id="publications">
+
+    <h2 class="heading">publications & awards</h2>
+    <br>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="list-group" id="awards"></div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="list-group" id="pubList">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- load pubs list -->
+    <script>
+      $(document).ready(function () {
+        $("#pubList").load("publications/publications.html");
+        $("#awards").load("publications/awards.html");
+      });
+    </script>
+  </section>
+
+
+  <!-- ///////////////////////////////////////////////////////////////-->
+  <!-- Footer -->
+  <section id="contact" style="margin-top:30%; padding-bottom:5%; background-color:black">
+    <footer class="text-center">
+      <div class="py-4 text-center footer">
+        <div class="container">
+          <h3> Ariel Noyman</h3>
 
           <!-- ///////////////////////////////////////////////////////////////-->
           <!-- social links  -->

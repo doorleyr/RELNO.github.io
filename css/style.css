@@ -1,3 +1,15 @@
+body {
+  font-family: 'Helvetica';
+  font-weight: 100;
+  line-height: 1.5em;
+  font-size: 13px;
+  overflow-x: hidden;
+}
+
+.fullWidth{
+  width: 100%; 
+}
+
 .scrollable {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -15,12 +27,13 @@
   width: 25%;
 }
 
-body {
-  font-family: 'Helvetica';
-  font-weight: 100;
-  line-height: 1.5em;
-  font-size: 13px;
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="newsGrid"] {
+      width: 100%;
+  }
 }
+
 
 small {
   font-family: 'Helvetica';
@@ -453,18 +466,26 @@ a:active {
 }
 
 .btn-readmore {
-  /* border-width: 0px; */
+  outline: none !important;
+  border-width: 1px;
+  border-color: #00000000;
   /* padding-top: 0.5rem; */
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-weight: 100;
-  -moz-box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 1rem .05rem rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1rem .05rem rgba(0, 0, 0, 0.2);
+}
+.btn-readmore:hover{
+-moz-box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, 0.5);
+box-shadow: 0 0 1rem .05rem rgba(0, 0, 0, 0.5);
 }
 
 .btn-readmore:focus {
-  outline: 0;
+  /* outline: 0; */
+  outline: none !important;
 }
 
 .btn-readmore:visited {
