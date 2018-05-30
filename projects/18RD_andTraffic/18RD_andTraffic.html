@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-sm">
+        <h2>
+            Andorra Traffic Prediction
+        </h2>
+    </div>
+    <!-- <div class="col-sm">
+        <a class="btn float-right" href="https://cityscope.github.io/CS_Andorra_RNC/" target="_blank">
+            <i class="fa fa-github fa-2x"></i>
+        </a>
+    </div> -->
+</div>
+<h5>Predicting Traffic in Andorra through Analysis of Telecom Data</h5>
+<br>
+<p>Strategic transportation models allow for optimization of network control parameters, designing interventions to improve the network structure and predicting the impact of future changes in travel demands. 
+An essential component of such models is the origin-destination matrix, which is traditionally generated using roadside and/or household surveys. 
+These surveys are expensive, time consuming and do not capture temporal variation in travel demand. Telecoms providers, however, routinely collect data on the mobility of devices in their networks for the purposes of billing and radio resource management. 
+These data can be exploited to improve transportation models. In this study, data from the Radio Network Controller of the Andorran telecom company is combined with limited traffic volume data in order to develop a calibrated urban transportation model for the country.
+<br>
+<img class="img-fluid mb-5" src="projects/18RD_andTraffic/andorraTraffic.jpg" alt="">
+<br>
+<br>
+    <br>
+    <br>
+    <button type="button" class="btn-readmore" data-toggle="collapse" data-target="#demo">read more..</button>
+    <div id="demo" class="collapse">
+          <br>
+          <br>
+          <img class="img-fluid mb-5" src="projects/18RD_andTraffic/architecture.png" alt="">
+          <br>
+          <br>
+          An initial trip matrix is generated from the telecom data and a parameterized correction model is used to modify the trip matrix before making traffic predictions. 
+          The parameters of the correction model are optimized by formulating a Mathematical Program with Equilibrium Constraints and solving it using a descent-based method. The calibration process described is flexible and can be adapted to different forms of transport model or O-D correction model.
+          Out-of-sample predictions from the calibrated model are shown to agree well with actual traffic volumes.
+          This approach can reduce or eliminate the need for travel surveys while enabling greater understanding of the temporal variation in travel demands and traffic volumes.
+        <br>
+        <br>
+        <img class="img-fluid mb-5" src="projects/18RD_andTraffic/scatter.png" alt="">
+        <br>
+        <br>
+    </div>
+</p>
+<br>
+<!-- ///////////////////////////////////////////////////////////////-->
