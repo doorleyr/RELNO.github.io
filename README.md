@@ -1,4 +1,4 @@
-Personal website, fork at will! 
+Personal website, forked from RELNO/RELNO.github.io
 
 Using Bootstrap and built on Freelancer template. 
 
